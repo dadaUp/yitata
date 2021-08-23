@@ -14,6 +14,19 @@ App({
       })
     }
 
+    const {statusBarHeight, platform} = wx.getSystemInfoSync();
+    const {top, height} = wx.getMenuButtonBoundingClientRect();
+    wx.setStorageSync('statusBarHeight', statusBarHeight);
+    wx.setStorageSync('menuBottonHeight', height ? height : 32);
+
+    if(top && top !== 0 && height !== 0){
+      const navBarHeight = (top - statusBarHeight) * 2 + height;
+      wx.setStorageSync('navBarHeight', navBarHeight);
+    } else {
+      wx.setStorageSync('navBarHeight', platform === 'android' ? 48 : 40);
+    }
+
     this.globalData = {}
+    
   }
 })

@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "navSeacher": "/components/navSeacher/index"
+  },
   "enablePullDownRefresh": true
 }

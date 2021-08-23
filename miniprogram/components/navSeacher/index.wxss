@@ -1,0 +1,27 @@
+/* components/navSeacher/index.wxss */
+.nav-container {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+}
+
+.nav-bar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.sercher{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}

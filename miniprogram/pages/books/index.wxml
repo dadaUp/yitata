@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<navSeacher></navSeacher>
 <view class="home">
     <view catchtap="navToDetail" 
       data-item="{{item}}" class="list" wx:for="{{list}}" wx:key="id">
