@@ -1,0 +1,30 @@
+.container{
+  padding-top: 200rpx;
+  height: 100%;
+}
+.box_text {
+  background-color: white;
+  text-align: center;
+  padding: 20rpx 0;
+  margin-top: 20rpx;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.button {
+  width: 300rpx;
+  text-align: center;
+  margin: 50rpx auto 0 auto;
+  height: 80rpx;
+  color: white;
+  border-radius: 5px;
+  line-height: 80rpx;
+  background-color: #07c160;
+}
+.cameraImg{
+  width: 240rpx;
+  height: 300rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}

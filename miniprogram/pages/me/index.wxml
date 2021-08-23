@@ -1,0 +1,32 @@
+<view class="me">
+  <view class="userbg">
+    <open-data type="userAvatarUrl"></open-data>
+    <!-- <open-data type="userGender" lang="zh_CN"></open-data> -->
+  </view>
+  <view class="userInfo">
+    <view class="avatar">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="nickName">
+      <open-data type="userNickName"></open-data>
+    </view>
+    <view class="area">
+      <open-data type="userProvince" lang="zh_CN"></open-data>
+      <open-data type="userCity" lang="zh_CN"></open-data>
+    </view>
+    <view class="labels">
+      <view class="label" wx:for="{{labels}}" data-item="{{item}}" style="background:{{item.backgroundColor}};color:{{item.color}}">{{item.text}}</view>
+    </view>
+  </view>
+  <view class="content-area">
+    <view class="contribute">
+    <view class="title">我贡献的</view>
+    <view class="book-area">啥也没有呢</view>
+  </view>
+  <view class="subscribe">
+    <view class="title">我订阅的</view>
+    <view class="book-area">啥也没有呢</view>
+  </view>
+  </view>
+</view>
+

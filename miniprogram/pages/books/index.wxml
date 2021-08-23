@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="home">
+    <view catchtap="navToDetail" 
+      data-item="{{item}}" class="list" wx:for="{{list}}" wx:key="id">
+      <image src="{{item.cover}}" />
+      <view class="list-r">
+        <view class="title">{{item.title}}</view>
+        <view class="detail">
+          <view class="author">
+             作者: {{item.author}}
+          </view>
+          <view class="summary">
+            简介: {{item.summary}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="bottom-tint" wx-if="{{!hasMore}}">呀，被你发现了我的底线~</view>
+</view>

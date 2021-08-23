@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/books/index",
+    "pages/qrcode/index",
+    "pages/detail/index",
+    "pages/me/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "书读角",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "useExtendedLib": {
+    "weui": true
+  },
+  "tabBar": {
+    "color": "#6495ED",
+    "selectedColor": "#6495ED",
+    "borderStyle": "white",
+    "list": [
+      {
+        "iconPath": "images/猫粮.png",
+        "selectedIconPath": "images/猫粮.png",
+        "pagePath": "pages/books/index",
+        "text": "书架"
+      },
+      {
+        "iconPath": "images/猫包.png",
+        "selectedIconPath": "images/猫包.png",
+        "pagePath": "pages/qrcode/index",
+        "text": "录入"
+      },
+      {
+        "iconPath": "images/猫咪.png",
+        "selectedIconPath": "images/猫咪.png",
+        "pagePath": "pages/me/index",
+        "text": "我的"
+      }
+    ]
+  }
+}
