@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "navSeacher": "/components/navSeacher/index"
+    "nav-seacher": "components/navSeacher/index",
+    "plate": "components/plate/index"
   },
   "enablePullDownRefresh": true
 }

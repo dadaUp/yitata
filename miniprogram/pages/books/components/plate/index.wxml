@@ -1,0 +1,12 @@
+<view class="column">
+    <view class="hd">
+        <view class="title">{{collection.title}}</view>
+        <navigator class="more" url="{{moreUrl}}" wx:if="{{true}}">全部</navigator>
+    </view>
+    <view class="bd">
+        <block wx:if="{{collection.books.length===0}}">
+            <view class="placeholder" wx:for="{{$anonymousCallee__5}}" wx:for-index="idx" wx:for-item="_" wx:key="idx"></view>
+        </block>
+        <books-scroll-x books="{{collection.books}}" wx:else></books-scroll-x>
+    </view>
+</view>

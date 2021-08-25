@@ -15,14 +15,18 @@ App({
     }
 
     const {statusBarHeight, platform} = wx.getSystemInfoSync();
-    const {top, height} = wx.getMenuButtonBoundingClientRect();
+    const {top, height, width} = wx.getMenuButtonBoundingClientRect();
     wx.setStorageSync('statusBarHeight', statusBarHeight);
     wx.setStorageSync('menuBottonHeight', height ? height : 32);
+    wx.setStorageSync('menuBottonWidth', width);
 
     if(top && top !== 0 && height !== 0){
+      const menuButtonTop = top - statusBarHeight;
       const navBarHeight = (top - statusBarHeight) * 2 + height;
+      wx.setStorageSync('menuButtonTop', menuButtonTop);
       wx.setStorageSync('navBarHeight', navBarHeight);
     } else {
+      wx.setStorageSync('menuButtonTop', 4);
       wx.setStorageSync('navBarHeight', platform === 'android' ? 48 : 40);
     }
 

@@ -1,0 +1,15 @@
+<scroll-view class="collectionList" scroll-x="true">
+  <block wx:if="{{books}}">
+    <navigator class="collection"  wx:for="{{books}}" wx:key="isbn">
+        <image class="cover" src="{{item.cover}}"></image>
+        <view class="title">{{item.title}}</view>
+        <view class="author">{{item.author}}</view>
+        <view class="tagList">
+          <text class="tag">{{'社会心理学'}}</text>
+          <text class="tag">{{'德国'}}</text>
+        </view>
+        <view class="summary">{{item.summary}}</view>
+    </navigator>
+  </block>
+
+</scroll-view>

@@ -9,7 +9,7 @@ Component({
     defaultData: {
       type: Object,
       value: {
-        title: "我是默认标题"
+        
       },
       observer: function(newVal, OldVal){}
     }
@@ -21,7 +21,9 @@ Component({
   data: {
     statusBarHeight: wx.getStorageSync('statusBarHeight') + 'px',
     navBarHeight: wx.getStorageSync('navBarHeight') + 'px',
-    menuBottonHeight  : wx.getStorageSync('menuBottonHeight') + 'px',
+    menuBottonHeight: wx.getStorageSync('menuBottonHeight') + 'px',
+    menuBottonWidth: wx.getStorageSync('menuBottonWidth') + 'px', 
+    menuBottonTop: wx.getStorageSync('menuButtonTop') + 'px', 
     navAndStatusBarHeight: wx.getStorageSync('statusBarHeight') + wx.getStorageSync('navBarHeight') + 'px'
   },
 

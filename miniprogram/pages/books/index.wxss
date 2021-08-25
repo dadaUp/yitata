@@ -1,7 +1,9 @@
 /**index.wxss**/
-.home{
-  background-color: #eeeeee;
+.home-page {
+  background: #f4f4f4;
+  position: relative;
 }
+
 .list{
   width: 100%;
   height: 200rpx;

@@ -5,6 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
+    plate1:{
+      title: '',
+      books: []
+    },
+    plate2:{
+      title: '',
+      books: []
+    },
     list:[],
     hasMore: true,
   },
@@ -13,7 +21,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.fechBooks();
+    this.createData();
   },
 
   /**
@@ -55,7 +63,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-    this.fechBooks('books', this.data.list.length, 20);
+    // this.fechBooks('books', this.data.list.length, 20);
   },
 
   /**
@@ -71,6 +79,25 @@ Page({
     wx.navigateTo({
       url: '/pages/detail/index',
     })
+  },
+
+  createData: function(){
+    const db = wx.cloud.database();
+    const _this = this;
+    db.collection('books').skip(0).limit(20).get().then(res=>{
+      _this.setData({
+        plate1:{
+          title: '最新上架',
+          books: res.data
+        },
+        plate2:{
+          title: '热门借阅',
+          books: res.data
+        }
+      })
+      console.log(res.data);
+    })
+    
   },
 
   fechBooks: function(dataBaseName = "books", skipNumber = 0, needNumber = 20){
