@@ -3,6 +3,10 @@
   white-space: nowrap;
 }
 
+/* .collectionList {
+  height: 300rpx;
+} */
+
 .author,.title {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -64,7 +68,6 @@
   background-color: #f5f5f5;
   font-size: 20rpx;
   height: 60rpx;
-  max-height: 60rpx;
   margin-top: 14rpx;
   margin-bottom: 20rpx;
   overflow: hidden;
@@ -73,10 +76,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp:2;
-  padding-top: 4rpx;
-  padding-bottom: 4rpx;
-  padding-left: 16rpx;
-  padding-right: 16rpx;
+  padding: 4rpx 16rpx 4rpx 16rpx;
   margin-right: 8rpx;
   border-radius: 10rpx;
 }
