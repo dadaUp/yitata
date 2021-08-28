@@ -1,0 +1,4 @@
+<view class="arrow">
+    <view class="title" wx:if="{{title}}">{{title}}</view>
+    <view class="icon"></view>
+</view>

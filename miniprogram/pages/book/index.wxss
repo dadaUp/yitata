@@ -1,0 +1,15 @@
+.root {
+  padding: 40rpx 30rpx;
+  background-color: #f0f2f7;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.isbn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30rpx;
+  color: silver;
+}

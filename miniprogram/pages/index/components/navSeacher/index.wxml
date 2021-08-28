@@ -1,0 +1,13 @@
+<view class="nav-container" style="height: {{navAndStatusBarHeight}};">
+  <view style="height: {{ statusBarHeight }}"></view>
+  <view class="search-view" style="padding-top:{{menuBottonTop}}; padding-right:{{menuBottonWidth}};">
+        <view class="search-row" style="padding-bottom:{{supportCustom?20:14}}rpx">
+    <navigator bindtap="searchClick" class="search-content" hoverClass="none" style="margin-right:{{supportCustom?0:30}}rpx" url="/search/pages/before-search/before-search">
+                <image class="search-icon" src="/images/ios-search.png"></image>
+                <input class="search-input" placeholder="输入书名、作者或分类" placeholderClass="search-input-phcolor" type="text"></input>
+            </navigator>
+        </view>
+    </view>
+</view>
+<view class="content" style="height: {{navAndStatusBarHeight}};">
+</view>

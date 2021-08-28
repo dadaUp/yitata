@@ -1,0 +1,11 @@
+<navigator url="/pages/annual/overview">
+    <view class="collection-large">
+        <view class="mask {{'mask-img-'+list.imgCode}}">
+            <view class="title">{{list.title}}</view>
+            <view class="covers">
+                <image class="{{'cover cover-'+idx}}" src="{{cover}}" wx:if="{{!(idx>=3)}}" wx:for="{{list.covers}}" wx:for-index="idx" wx:for-item="cover" wx:key="idx"></image>
+                <view class="total">+{{list.total}}</view>
+            </view>
+        </view>
+    </view>
+</navigator>

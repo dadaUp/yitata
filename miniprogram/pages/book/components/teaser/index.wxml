@@ -1,0 +1,21 @@
+<block wx:if="{{!title}}">
+</block>
+<block wx:else>
+  <view class="header">
+    <image class="cover" src="{{cover}}"></image>
+    <view class="detail">
+      <view class="title">{{title}}</view>
+      <view class="meta">{{meta}}</view>
+      <form class="operations-form" bindsubmit="handleMarkClick" report-submit="true" report-submit-timeout="10">
+        <view class="operations">
+          <button class="{{'btn mark '+(isMark?'ng':'')}}" data-action="mark" formType="submit">
+              <text>{{isMark?'已看过':'想看'}}</text>
+          </button>
+          <button class="{{'btn done '+(isBorrow?'ng':'')}}" data-action="borrow" formType="submit">
+              <text>{{isBorrow?'已借阅':'借阅'}}</text>
+          </button>
+        </view>
+      </form>
+    </view>
+  </view>
+</block>

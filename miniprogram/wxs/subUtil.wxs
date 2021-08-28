@@ -1,0 +1,9 @@
+var subString = function(val, leng) {
+  if(val == undefined || val.length == 0){
+    return;
+  }
+  return val.substring(0, leng);
+}
+module.exports = {
+  subString: subString
+}

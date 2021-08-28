@@ -1,0 +1,19 @@
+<block wx:if="{{!conciseReviews}}">
+</block>
+<block wx:else>
+    <view class="container">
+        <view class="header">
+            <view>短评</view>
+            <view bindtap="funPrivatebjzzz" class="arrow">
+                <arrow-link title="全部xx条"></arrow-link>
+            </view>
+        </view>
+        <view class="content">
+            <concise-review wx:for="{{conciseReviews}}" wx:key="id" wx:for-item="review" review="{{review}}"></concise-review>
+        </view>
+        <view bindtap="funPrivatebjzzz" class="more">查看全部短评<view class="arrow">
+                <arrow-link></arrow-link>
+            </view>
+        </view>
+    </view>
+</block>

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "concise-review": "../conciseReview/index",
+    "arrow-link": "../../../../components/arrowLink/index"
+  }
+}

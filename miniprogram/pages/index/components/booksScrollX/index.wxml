@@ -1,0 +1,19 @@
+<scroll-view class="collectionList" scroll-x="true">
+  <block wx:if="{{books}}">
+    <navigator class="collection"  wx:for="{{books}}" wx:key="isbn" url="/pages/book/index?isbn={{item.isbn}}">
+        <image class="cover" src="{{item.cover}}"></image>
+        <view class="title">{{item.title}}</view>
+        <view class="author">{{item.author}}</view>
+        <view class="tagList">
+          <text class="tag">{{'社会心理学'}}</text>
+          <text class="tag">{{'德国'}}</text>
+        </view>
+        <wxs src="../../../../wxs/subUtil.wxs" module="tools" />
+        <view class="summary">{{tools.subString(item.summary, 30)}}</view>
+    </navigator>
+    <navigator class="more-bar">
+        <view class="more">{{'更多'}}</view>
+    </navigator>
+  </block>
+
+</scroll-view>

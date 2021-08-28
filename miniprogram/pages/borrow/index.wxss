@@ -1,0 +1,14 @@
+.root {
+  width: 100%;
+}
+
+.button {
+  width: 300rpx;
+  text-align: center;
+  margin: 50rpx auto 0 auto;
+  height: 80rpx;
+  color: white;
+  border-radius: 5px;
+  line-height: 80rpx;
+  background-color: #07c160;
+}

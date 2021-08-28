@@ -1,0 +1,6 @@
+<view class="nav-container" style="height: {{navAndStatusBarHeight}};">
+  <view style="height: {{ statusBarHeight }}"></view>
+  <image bindtap="back" class="back-icon" src="/images/ios-arrow-left.png"></image>
+</view>
+<view class="content" style="height: {{navAndStatusBarHeight}};">
+</view>

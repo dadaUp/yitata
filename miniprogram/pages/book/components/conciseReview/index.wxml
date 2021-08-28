@@ -1,0 +1,23 @@
+<block>
+    <view class="review">
+        <view>
+            <navigator url="{{'/pages/user/user?id='+review.user.id}}">
+                <image class="avatar" src="{{review.user.avatar}}"></image>
+            </navigator>
+            <view class="user">
+                <navigator url="{{'/pages/user/user?id='+review.user.id}}">
+                    <view class="name">{{review.user.name}}</view>
+                </navigator>
+                <view class="rating">
+                    <view class="ratingStars" wx:if="{{review.rating}}">
+                        <rating value="review.rating"></rating>
+                    </view>
+                    <text class="time">{{review.createTime}}</text>
+                </view>
+            </view>
+        </view>
+        <view bindtap="handleClickComment" class="{{'comment '+(isClamped?'isClamped':'')}}">{{review.content}}</view>
+        <view class="vote" wx:if="{{!hideVote}}">
+            <view class="icon"></view>{{review.vote_count}}</view>
+    </view>
+</block>

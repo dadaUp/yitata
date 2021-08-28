@@ -1,0 +1,32 @@
+.container {
+  border-radius: 16rpx;
+  padding: 30rpx;
+  margin: 60rpx 0;
+  background: #fff;
+}
+
+.header,.more {
+  font-weight: 700;
+  color: #191919;
+}
+
+.header {
+  position: relative;
+  font-size: 34rpx;
+}
+
+.header .arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.more {
+  font-size: 30rpx;
+  margin-top: 30rpx;
+}
+
+.more .arrow {
+  float: right;
+  margin-top: 6rpx;
+}

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "nav-back": "../../components/navBack/index",
+    "teaser": "./components/teaser/index",
+    "intro": "./components/intro/index",
+    "concise-review-bar": "./components/conciseReviewBar/index"
+  },
+  "enablePullDownRefresh": true
+}

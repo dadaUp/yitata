@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "nav-back": "../../components/navBack/index"
+  }
+}

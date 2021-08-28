@@ -1,0 +1,8 @@
+<view class="block">
+    <view class="subtitle">简介</view>
+    <view>
+      <view class="{{'intro '+(_clamp?'clamp-4':'')}}">{{intro}}</view>
+      <view bindtap="handleExpand" class="expand" wx:if="{{_showExpand}}">{{_clamp?'展开':'收起'}}</view>
+    </view>
+</view>
+

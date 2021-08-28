@@ -1,0 +1,8 @@
+<nav-seacher></nav-seacher>
+<view class="home-page">
+  <plate collection="{{plate1}}"></plate>
+  <view class="list-board">
+    <list-board wx:for="{{bookList}}" wx:key="id" list="{{item}}"></list-board>
+  </view>
+ 
+</view>

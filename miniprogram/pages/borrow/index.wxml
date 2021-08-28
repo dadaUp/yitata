@@ -1,0 +1,9 @@
+<nar-back></nar-back>
+<view class="root">
+  <view>操作指南</view>
+  <view>
+    <text>请前往书架扫描图书条形码</text>
+  </view>
+  <view class="button" wx:if="{{title === ''}}" bindtap="scan"> 点击扫描
+  </view>
+</view>

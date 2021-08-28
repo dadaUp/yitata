@@ -1,0 +1,33 @@
+.intro {
+  font-size: 30rpx;
+  color: #191919;
+  line-height: 48rpx;
+}
+
+.block {
+  margin-top: 60rpx;
+}
+
+.subtitle {
+  position: relative;
+  font-size: 34rpx;
+  line-height: 44rpx;
+  font-weight: 700;
+  color: #191919;
+  margin-bottom: 20rpx;
+}
+
+.clamp-4,.clamp-10 {
+  overflow: hidden;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.expand {
+  font-size: 26rpx;
+  font-weight: 400;
+  color: #818181;
+  text-align: right;
+}

@@ -1,0 +1,9 @@
+/**index.wxss**/
+.home-page {
+  background: #f0f2f7;
+  position: relative;
+}
+
+.list-board {
+  padding: 30rpx;
+}

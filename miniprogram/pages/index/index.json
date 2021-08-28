@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "nav-seacher": "./components/navSeacher/index",
+    "plate": "./components/plate/index",
+    "list-board": "./components/listBoard/index"
+  },
+  "enablePullDownRefresh": false
+}
