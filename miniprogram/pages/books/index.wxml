@@ -1,4 +1,0 @@
-<nav-seacher></nav-seacher>
-<view class="home-page">
-  <plate collection="{{plate1}}"></plate>
-</view>
