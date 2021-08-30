@@ -1,12 +1,11 @@
-// pages/borrow/index.js
+// pages/mark/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    isbn: '',
-    title: ''
+    isbn: ''
   },
 
   /**
@@ -65,29 +64,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  borrow: function(){
-    wx.showToast({
-      title: '借阅成功',
-    })
-  },
-
-  scan: function(){
-    var _this = this;
-    wx.scanCode({
-      onlyFromCamera: true,
-      success(res) {
-        console.log(res);
-        if(_this.isbn && res.result !== _this.isbn){
-          wx.showToast({
-            icon: 'none',
-            title: '不是这本书',
-          })
-        } else {
-          _this.borrow();
-        }
-      }
-    });
   }
 })

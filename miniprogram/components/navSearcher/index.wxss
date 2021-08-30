@@ -1,11 +1,11 @@
-/* components/navSeacher/index.wxss */
+
+
 .nav-container {
   position: fixed;
   width: 100%;
   z-index: 99;
   top: 0;
   left: 0;
-  background: #f0f2f7;
 }
 
 .search-view {

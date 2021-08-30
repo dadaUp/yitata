@@ -4,7 +4,6 @@
   z-index: 99;
   top: 0;
   left: 0;
-  background: #f0f2f7;
 }
 
 .back-icon {

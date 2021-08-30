@@ -11,7 +11,7 @@
           <button class="{{'btn mark '+(isMark?'ng':'')}}" data-action="mark" formType="submit">
               <text>{{isMark?'已看过':'想看'}}</text>
           </button>
-          <button class="{{'btn done '+(isBorrow?'ng':'')}}" data-action="borrow" formType="submit">
+          <button class="{{'btn done '+(isBorrow?'ng':'')}}" data-action="borrow" formType="submit" bindtap="toBorrow">
               <text>{{isBorrow?'已借阅':'借阅'}}</text>
           </button>
         </view>

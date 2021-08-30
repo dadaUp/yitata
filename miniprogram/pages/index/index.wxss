@@ -1,6 +1,8 @@
-/**index.wxss**/
+page {
+  background-color: #f0f2f7;
+}
+
 .home-page {
-  background: #f0f2f7;
   position: relative;
 }
 

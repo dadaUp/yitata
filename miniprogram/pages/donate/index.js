@@ -1,4 +1,3 @@
-// pages/qrcode/index.js
 Page({
 
   data: {

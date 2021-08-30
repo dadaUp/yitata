@@ -1,6 +1,5 @@
 .container{
   padding-top: 200rpx;
-  height: 100%;
 }
 .box_text {
   background-color: white;

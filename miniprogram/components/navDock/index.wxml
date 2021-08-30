@@ -1,0 +1,9 @@
+<view class="nav-container" style="height: {{navAndStatusBarHeight}};">
+  <view style="height: {{ statusBarHeight }}"></view>
+  <image bindtap="dock" class="dock-icon" src="/images/菜单1-32px.svg"></image>
+  <view class="title">
+    {{title}}
+  </view>
+</view>
+<view class="content" style="height: {{navAndStatusBarHeight}};">
+</view>

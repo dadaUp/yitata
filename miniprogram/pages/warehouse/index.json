@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "nav-searcher": "../../components/navSearcher/index",
+    "widget-bar": "./components/widgetBar/index"
+  }
+}

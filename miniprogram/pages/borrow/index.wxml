@@ -1,4 +1,4 @@
-<nar-back></nar-back>
+<nav-back></nav-back>
 <view class="root">
   <view>操作指南</view>
   <view>
@@ -7,3 +7,6 @@
   <view class="button" wx:if="{{title === ''}}" bindtap="scan"> 点击扫描
   </view>
 </view>
+<view class="isbn">
+    {{'ISBN: '+ isbn}}
+  </view>

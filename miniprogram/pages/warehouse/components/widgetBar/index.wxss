@@ -1,0 +1,43 @@
+.collections {
+  justify-content: space-between;
+  display: flex;
+}
+
+.collection {
+  display: inline-block;
+  height: 90rpx;
+  margin-top: 20rpx;
+  /* margin-left: 30rpx; */
+  font-size: 0;
+  border-style: solid;
+  border-radius: 16rpx;
+  border-color: #F5F5F5;
+  background-color: #fafafa;
+  border-width: 2rpx;
+  justify-content: center;
+}
+
+.collections::before,.collections::after {
+  content: '';
+  display: block;
+}
+
+/* 
+.collection:last-child {
+  margin-right: 30rpx;
+} */
+
+.icon {
+  float: left;
+  width: 40rpx;
+  height: 40rpx;
+  margin: 10rpx 54rpx 2rpx 54rpx;
+  border-style: solid;
+  border-color: #F5F5F5;
+  border-width: 0.1rpx;
+}
+
+.title {
+  font-size: 20rpx;
+  text-align: center;
+}

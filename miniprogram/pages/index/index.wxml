@@ -1,4 +1,4 @@
-<nav-seacher></nav-seacher>
+<nav-dock title="晚芳"></nav-dock>
 <view class="home-page">
   <plate collection="{{plate1}}"></plate>
   <view class="list-board">

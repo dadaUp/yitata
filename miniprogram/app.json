@@ -1,10 +1,12 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/qrcode/index",
+    "pages/warehouse/index",
     "pages/book/index",
     "pages/me/index",
-    "pages/borrow/index"
+    "pages/borrow/index",
+    "pages/mark/index",
+    "pages/donate/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -30,10 +32,10 @@
         "text": "首页"
       },
       {
-        "iconPath": "images/上传.png",
-        "selectedIconPath": "images/上传.png",
-        "pagePath": "pages/qrcode/index",
-        "text": "录入"
+        "iconPath": "images/设置.png",
+        "selectedIconPath": "images/设置.png",
+        "pagePath": "pages/warehouse/index",
+        "text": "书库"
       },
       {
         "iconPath": "images/我的.png",

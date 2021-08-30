@@ -11,6 +11,7 @@ Component({
    * 组件的初始数据
    */
   data: {
+    isbn: '9787111647348',
     isMark: false,
     isBorrow: false,
     title: '复杂性思考：复杂性科学和计算模型（原书第2版）',
@@ -22,6 +23,19 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    handleMarkClick: function(e){
+      const isbn = this.data.isbn;
+      const action = e.detail.target.dataset.action;
+      if(action === 'mark'){
+        wx.navigateTo({
+          url: '/pages/mark/index?isbn=' + isbn,
+        })
+      } else if(action === 'borrow'){
+        wx.navigateTo({
+          url: '/pages/borrow/index?isbn=' + isbn,
+        })
+      }
+    }
 
   }
 })

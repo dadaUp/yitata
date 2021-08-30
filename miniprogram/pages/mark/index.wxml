@@ -1,0 +1,4 @@
+<nav-back></nav-back>
+<view class="isbn">
+    {{'ISBN: '+ isbn}}
+  </view>

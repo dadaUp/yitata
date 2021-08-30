@@ -1,0 +1,2 @@
+<nav-searcher></nav-searcher>
+<widget-bar widgets="{{widgets}}"></widget-bar>

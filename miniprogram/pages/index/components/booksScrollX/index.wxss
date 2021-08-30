@@ -11,7 +11,7 @@
   margin-left: 30rpx;
   font-size: 0;
   border-style: solid;
-  border-radius: 32rpx;
+  border-radius: 16rpx;
   border-color: #F5F5F5;
   background-color: #fff;
   border-width: 2rpx;
@@ -24,9 +24,9 @@
   height: 240rpx;
   margin-left: 30rpx;
   border-style: solid;
-  border-radius: 32rpx;
+  border-radius: 16rpx;
   border-color: #F5F5F5;
-  background-color: #F5F5F5;
+  background-color: #fafafa;
   border-width: 1rpx;
   margin-right: 30rpx;
 }
@@ -36,6 +36,7 @@
   writing-mode: tb-rl;
   font-size: 28rpx;
   font-weight: 300;
+  color: silver;
   margin: 99rpx 17rpx 99rpx 17rpx;
 }
 

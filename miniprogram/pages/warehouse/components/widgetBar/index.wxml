@@ -1,0 +1,6 @@
+<view class="collections">
+    <navigator class="collection"  wx:for="{{widgets}}" wx:key="title" url="{{item.url}}">
+        <image class="icon" src="{{item.icon}}"></image>
+        <view class="title">{{item.title}}</view>
+    </navigator>
+</view>
