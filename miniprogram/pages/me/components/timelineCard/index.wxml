@@ -1,0 +1,9 @@
+<navigator class="collection"  url="/pages/book/index?isbn={{book.isbn}}">
+  <image class="cover" src="{{book.cover}}"></image>
+  <view class="title">{{book.title}}</view>
+  <view class="author">{{book.author}}</view>
+  <view class="tagList">
+    <text class="tag">{{'社会心理学'}}</text>
+    <text class="tag">{{'德国'}}</text>
+  </view>
+</navigator>

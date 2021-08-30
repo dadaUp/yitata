@@ -1,4 +1,4 @@
-<nav-dock title="晚芳"></nav-dock>
+<nav-dock title="最新上架"></nav-dock>
 <view class="home-page">
   <plate collection="{{plate1}}"></plate>
   <view class="list-board">

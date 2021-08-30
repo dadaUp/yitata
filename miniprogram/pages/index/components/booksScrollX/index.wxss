@@ -22,7 +22,7 @@
   display: inline-block;
   width: 80rpx;
   height: 240rpx;
-  margin-left: 30rpx;
+  margin-left: 24rpx;
   border-style: solid;
   border-radius: 16rpx;
   border-color: #F5F5F5;
@@ -93,10 +93,7 @@
   background-color: #f8f8f8;
   font-size: 20rpx;
   height: 30rpx;
-  padding-top: 2rpx;
-  padding-bottom: 2rpx;
-  padding-left: 16rpx;
-  padding-right: 16rpx;
+  padding: 2rpx 16rpx 2rpx 16rpx;
   margin-right: 12rpx;
   border-radius: 10rpx;
 }

@@ -1,0 +1,72 @@
+.collection .title .collectionList {
+  width: 100%;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+.collection {
+  display: inline-block;
+  width: 480rpx;
+  height: 170rpx;
+  margin-left: 30rpx;
+  font-size: 0;
+  border-style: solid;
+  border-radius: 16rpx;
+  border-color: #F5F5F5;
+  background-color: #fff;
+  border-width: 2rpx;
+}
+
+.author,.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:1;
+  padding-right: 30rpx;
+}
+
+.cover {
+  float: left;
+  width: 120rpx; 
+  height: 150rpx;
+  margin: 10rpx;
+  /* border-style: solid;
+  border-color: #F5F5F5;
+  border-width: 0.1rpx; */
+}
+
+.collection .title {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #191919;
+  margin: 12rpx 0 4rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+}
+
+.collection .author {
+  vertical-align: text-top;
+  font-size: 20rpx;
+  line-height: 24rpx;
+  color: #6d6d6d;
+  margin-top: 14rpx;
+  margin-bottom: 14rpx;
+}
+
+.tagList {
+  display: inline;
+  width: 240rpx;
+  height: 40rpx;
+}
+
+.tag {
+  background-color: #f8f8f8;
+  font-size: 20rpx;
+  height: 30rpx;
+  padding: 2rpx 16rpx 2rpx 0;
+  margin-right: 12rpx;
+  border-radius: 10rpx;
+}

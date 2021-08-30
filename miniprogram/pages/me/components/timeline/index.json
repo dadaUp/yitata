@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "timeline-card": "../timelineCard/index"
+  }
+}

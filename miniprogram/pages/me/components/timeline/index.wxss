@@ -1,0 +1,43 @@
+page {
+  background: #f0f2f5;
+}
+
+.timeline-bar {
+  margin: 30rpx 20rpx 0 20rpx;
+  background-color: #fff;
+  border-radius: 28rpx;
+}
+
+.timeline-activity {
+  padding: 32rpx 48rpx 16rpx 150rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.node-img {
+  background-color: silver;
+  height: 16rpx; 
+  width: 16rpx;
+  margin-left: 8rpx;
+  border-radius: 50%;
+}
+
+.activity_item {
+  border-left: 0.5rpx solid silver;
+  height: 200rpx;
+  margin: -12rpx 0 -12rpx 14rpx;
+  position: relative;
+  /* border-bottom: 0.1rpx solid rgb(228, 228, 228); */
+}
+
+.activity_item_time {
+  position: absolute;
+  left: -110rpx;
+  top: -14rpx;
+}
+
+.activity_item_name {
+  position: absolute;
+  top: -18rpx;
+  left: 64rpx;
+}

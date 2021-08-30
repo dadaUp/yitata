@@ -1,0 +1,11 @@
+<view class="timeline-bar">
+  <block wx:for="{{historyTodayData}}" wx:key="time" data-index="{{index}}">
+    <view class='timeline-activity'>
+      <view class="node-img"></view>
+      <view class="activity_item">
+        <view class="activity_item_time">{{item.time}}</view>
+        <timeline-card book="{{item.book}}"></timeline-card>
+      </view>
+    </view>
+  </block>
+</view>

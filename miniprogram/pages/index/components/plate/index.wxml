@@ -1,7 +1,7 @@
 <view class="column">
-    <view class="hd">
+    <!-- <view class="hd">
         <view class="title">{{collection.title}}</view>
-    </view>
+    </view> -->
     <view class="bd">
         <block wx:if="{{collection.books.length===0}}">
         </block>
