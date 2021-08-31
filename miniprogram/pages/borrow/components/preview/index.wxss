@@ -1,0 +1,7 @@
+.book {
+  background: #fff;
+  margin: 0 16rpx 0 16rpx;
+  padding: 30rpx;
+  border-radius: 16rpx;
+  height: 460rpx;
+}

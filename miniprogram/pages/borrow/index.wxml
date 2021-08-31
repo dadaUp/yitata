@@ -1,12 +1,10 @@
-<nav-back></nav-back>
+<nav-back title="借阅"></nav-back>
+<header></header>
+<preview></preview>
 <view class="root">
-  <view>操作指南</view>
-  <view>
-    <text>请前往书架扫描图书条形码</text>
-  </view>
-  <view class="button" wx:if="{{title === ''}}" bindtap="scan"> 点击扫描
+<view class="button" wx:if="{{title === ''}}" bindtap="scan"> 点击扫描
   </view>
 </view>
 <view class="isbn">
     {{'ISBN: '+ isbn}}
-  </view>
+</view>

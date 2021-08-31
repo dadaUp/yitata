@@ -1,4 +1,4 @@
-<image class="bg-img"  mode="aspectFill" src="/images/个人背景1.jpg"></image>
+<image class="bg-img" bindtap="changeBgImg"  mode="aspectFill" src="{{'/images/个人背景' + imgNo + '.jpg'}}"></image>
 <view class="container">
   <view class="avatar">
     <open-data type="userAvatarUrl"></open-data>

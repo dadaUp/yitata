@@ -1,0 +1,5 @@
+<view>
+  <scroll-view class="scroll" scroll-x="true">
+    <view class="tag {{item.checked ? 'checked':''}}" bindtap="check" data-index="{{index}}" wx:for="{{tags}}" wx:key="id">{{item.name}}</view>
+  </scroll-view>
+</view>

@@ -2,7 +2,8 @@
   "usingComponents": {
     "nav-dock": "../../components/navDock/index",
     "plate": "./components/plate/index",
-    "list-board": "./components/listBoard/index"
+    "list-board": "./components/listBoard/index",
+    "widget-bar": "./components/widgetBar/index"
   },
   "enablePullDownRefresh": false
 }

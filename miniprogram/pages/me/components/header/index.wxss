@@ -23,7 +23,7 @@
   width: 120rpx;
   height: 120rpx;
   border-radius: 50%;
-  margin-top: -300rpx;
+  top: 280rpx;
   overflow: hidden;
 }
 

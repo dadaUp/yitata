@@ -17,6 +17,26 @@ Page({
       icon: '/images/借阅-32px.svg',
       title: '借阅',
       url: '/pages/borrow/index',
+    }],
+    filterTags: [{
+      id: 1,
+      name: '全部',
+      checked: true
+    },{
+      id: 2,
+      name: '互联网'
+    },{
+      id: 3,
+      name: '文学'
+    },{
+      id: 4,
+      name: '艺术'
+    },{
+      id: 5,
+      name: '小说'
+    },{
+      id: 6,
+      name: '科学'
     }]
   },
 

@@ -1,0 +1,3 @@
+<view class="book">
+  <image wx:if="book.title"></image>
+</view>

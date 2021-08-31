@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "nav-searcher": "../../components/navSearcher/index",
-    "widget-bar": "./components/widgetBar/index"
+    "widget-bar": "./components/widgetBar/index",
+    "filter-bar": "./components/filterBar/index"
   }
 }

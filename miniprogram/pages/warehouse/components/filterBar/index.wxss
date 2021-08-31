@@ -1,0 +1,29 @@
+.scroll {
+  width: 100%;
+  white-space: nowrap;
+  vertical-align: top;
+  margin-top: 16rpx;
+}
+
+.tag {
+  display: inline-block;
+  min-width: 100rpx;
+  font-size: 26rpx;
+  text-align: center;
+  border-style: solid;
+  border-radius: 16rpx;
+  border-color: #F5F5F5;
+  background-color: #fff;
+  border-width: 2rpx;
+  margin: 2rpx 0 2rpx 16rpx;
+  padding: 1rpx 10rpx 1rpx 10rpx;
+}
+
+.checked {
+  background-color: #e9f6fd;
+  color: #4082a2;
+}
+
+.scroll:first-child {
+  margin-left: 16rpx;
+}

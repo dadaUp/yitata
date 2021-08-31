@@ -1,5 +1,6 @@
-<nav-dock title="最新上架"></nav-dock>
+<nav-dock title="首页"></nav-dock>
 <view class="home-page">
+  <widget-bar style="position: sticky; top: 0px;" widgets="{{widgets}}"></widget-bar>
   <plate collection="{{plate1}}"></plate>
   <view class="list-board">
     <list-board wx:for="{{bookList}}" wx:key="id" list="{{item}}"></list-board>

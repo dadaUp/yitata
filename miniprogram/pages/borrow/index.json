@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "nav-back": "../../components/navBack/index"
+    "nav-back": "../../components/navBack/index",
+    "header": "./components/header/index",
+    "preview": "./components/preview/index"
   }
 }

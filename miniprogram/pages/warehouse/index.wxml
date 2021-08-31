@@ -1,2 +1,3 @@
 <nav-searcher></nav-searcher>
-<widget-bar widgets="{{widgets}}"></widget-bar>
+<!-- <widget-bar widgets="{{widgets}}"></widget-bar> -->
+<filter-bar tags="{{filterTags}}" checkedIndex="0"></filter-bar>
