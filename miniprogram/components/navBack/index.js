@@ -20,6 +20,7 @@ Component({
    */
   methods: {
     back: function(){
+      console.log(1)
       wx.navigateBack({
         delta: 1,
       })

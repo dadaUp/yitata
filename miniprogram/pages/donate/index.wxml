@@ -1,15 +1,12 @@
-<nav-back></nav-back>
-<view class="container">
-  <image wx:if="{{ cover }}" src="{{ cover }}" mode="aspectFit" style="width:240px" />
-<view wx:if="{{title}}">
-  <view class="box_text">书名：{{ title }}</view>
-  <view class="box_text">作者：{{ author }}</view>
-  <view class="box_text">简介：{{ miniSummary }}</view>
+<nav-back title="捐书"></nav-back>
+<header></header>
+<preview book="{{book}}"></preview>
+<view class="root">
+  <view class="button" wx:if="{{book.title === ''}}" bindtap="scan"> 点击扫描
+  </view>
+  <view class="button" wx:else bindtap="borrow"> 确认捐书
+  </view>
 </view>
-<view class="cameraImg" wx:else>
-  <image src="/images/猫包.png" mode="aspectFit" />
+<view class="isbn">
+    {{'ISBN: '+ isbn}}
 </view>
-<view class="button" wx:if="{{title === ''}}" bindtap="scan">点击扫描</view>
-<view class="button" wx:if="{{title !== ''}}" bindtap="enter">确认录入</view>
-</view>
-

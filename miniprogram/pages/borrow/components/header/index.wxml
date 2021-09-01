@@ -1,4 +1,5 @@
-<view class="title">
-  <view class="title-text">操作指南</view>
+<view class="cover">
+  <image class="header-img" src="../../../../images/图书义卖.svg"></image>
 </view>
-<view class="content">请前往书架扫描取阅图书的条形码进行借阅</view>
+
+<!-- <view class="content">请前往书架扫描图书条形码取阅</view> -->

@@ -1,4 +1,3 @@
-// pages/borrow/index.js
 Page({
 
   /**
@@ -6,7 +5,13 @@ Page({
    */
   data: {
     isbn: '',
-    title: ''
+    book: {
+      isbn: '',
+      title: '',
+      cover: '',
+      author: '',
+      summary: ''
+    }
   },
 
   /**
@@ -18,58 +23,33 @@ Page({
     })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  },
-
   borrow: function(){
+    // TODO
+
     wx.showToast({
-      title: '借阅成功',
+      title: '功能正在玩命开发中',
+      icon: 'none'
+    })
+    this.setData({
+      book: {
+        title: ''
+      },
+      isbn: ''
+    })
+  },
+
+  fetchBookByIsbn: function(isbn){
+    const db = wx.cloud.database();
+    const _this = this;
+    console.log(isbn);
+    db.collection('books').where({
+      isbn: isbn
+    })
+    .get().then(res => {
+      _this.setData({
+        book: res.data[0],
+        isbn: isbn
+      })
     })
   },
 
@@ -78,15 +58,7 @@ Page({
     wx.scanCode({
       onlyFromCamera: true,
       success(res) {
-        console.log(res);
-        if(_this.isbn && res.result !== _this.isbn){
-          wx.showToast({
-            icon: 'none',
-            title: '不是这本书',
-          })
-        } else {
-          _this.borrow();
-        }
+        _this.fetchBookByIsbn(res.result);
       }
     });
   }

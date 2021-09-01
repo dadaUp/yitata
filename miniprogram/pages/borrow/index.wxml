@@ -1,8 +1,10 @@
 <nav-back title="借阅"></nav-back>
 <header></header>
-<preview></preview>
+<preview book="{{book}}"></preview>
 <view class="root">
-<view class="button" wx:if="{{title === ''}}" bindtap="scan"> 点击扫描
+  <view class="button" wx:if="{{book.title === ''}}" bindtap="scan"> 点击扫描
+  </view>
+  <view class="button" wx:else bindtap="borrow"> 确认借阅
   </view>
 </view>
 <view class="isbn">

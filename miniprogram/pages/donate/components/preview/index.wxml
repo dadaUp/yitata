@@ -1,6 +1,6 @@
 <view class="book">
   <block wx:if="{{book.title === ''}}">
-    <view class="placeholder">请前往书架扫描图书条形码</view>
+    <view class="placeholder">请扫描图书条形码并放置书架</view>
   </block>
   <block wx:else>
     <image class="cover" src="{{book.cover}}"></image>

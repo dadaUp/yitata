@@ -10,7 +10,7 @@ page {
 .button {
   width: 300rpx;
   text-align: center;
-  margin: 50rpx auto 0 auto;
+  margin: 26rpx auto 0 auto;
   height: 80rpx;
   color: rgba(0,0,0,7);
   border-radius: 5px;
@@ -24,6 +24,6 @@ page {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30rpx;
+  margin-top: 60rpx;
   color: silver;
 }

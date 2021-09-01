@@ -1,0 +1,11 @@
+<view class="book">
+  <view class="card">
+    <image class="cover" src="{{book.cover}}"></image>
+    <wxs src="../../../../wxs/subUtil.wxs" module="tools" />
+    <view class="summary">{{tools.subString(book.summary, 50)}}</view>
+  </view>
+  <view class="basic">
+    <view class="title">{{book.title}}</view>
+    <view class="meta">{{book.author}}</view>
+  </view>
+</view>

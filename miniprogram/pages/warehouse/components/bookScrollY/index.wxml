@@ -1,0 +1,3 @@
+<navigator wx:for="{{books}}">
+  <book-card></book-card>
+</navigator>
