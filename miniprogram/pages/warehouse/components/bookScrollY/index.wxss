@@ -1,1 +1,3 @@
-/* pages/warehouse/components/bookScrollY/index.wxss */
+.container:first-child {
+  margin-top: 32rpx;
+}

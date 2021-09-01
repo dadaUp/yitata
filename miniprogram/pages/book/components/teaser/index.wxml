@@ -1,11 +1,11 @@
-<block wx:if="{{!title}}">
+<block wx:if="{{!book.title}}">
 </block>
 <block wx:else>
   <view class="header">
-    <image class="cover" src="{{cover}}"></image>
+    <image class="cover" src="{{book.cover}}"></image>
     <view class="detail">
-      <view class="title">{{title}}</view>
-      <view class="meta">{{meta}}</view>
+      <view class="title">{{book.title}}</view>
+      <view class="meta">{{book.author}}</view>
       <form class="operations-form" bindsubmit="handleMarkClick" report-submit="true" report-submit-timeout="10">
         <view class="operations">
           <button class="{{'btn mark '+(isMark?'ng':'')}}" data-action="mark" formType="submit">

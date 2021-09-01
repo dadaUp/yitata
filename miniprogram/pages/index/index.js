@@ -63,7 +63,7 @@ Page({
   createData: function(){
     const db = wx.cloud.database();
     const _this = this;
-    db.collection('books').skip(0).orderBy('createTime','desc').limit(20).get().then(res=>{
+    db.collection('books').skip(0).orderBy('createTime','desc').limit(10).get().then(res=>{
       _this.setData({
         plate1:{
           title: '最新上架',
@@ -74,21 +74,5 @@ Page({
     })
     
   },
-
-  fechBooks: function(dataBaseName = "books", skipNumber = 0, needNumber = 20){
-    const db = wx.cloud.database();
-    const _this = this;
-    db.collection(dataBaseName).skip(skipNumber).limit(needNumber).get()
-    .then(res => {
-      console.log(res);
-      const oldList = _this.data.list;
-      const newList = oldList.concat(res.data);
-      const hasMore = !(res.data && res.data.length < 1);
-      _this.setData({
-        list: newList,
-        hasMore,
-      })
-    })
-  }
 
 })

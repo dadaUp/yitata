@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    detailInfo: {},
+    book: {},
     isbn: ''
   },
 
@@ -13,9 +13,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      isbn: options.isbn
-    })
+
+    this.fetchBookByIsbn(options.isbn);
   },
 
   /**
@@ -60,15 +59,19 @@ Page({
 
   },
 
-  fechBookDeail: function(dataBaseName = "books", skipNumber = 0, needNumber = 20){
+  fetchBookByIsbn: function(isbn){
     const db = wx.cloud.database();
     const _this = this;
-    db.collection(dataBaseName).skip(skipNumber).limit(needNumber).get()
-    .then(res => {
-      console.log(res);
+    console.log(isbn);
+    db.collection('books').where({
+      isbn: isbn
+    })
+    .get().then(res => {
       _this.setData({
-        detailInfo: res,
+        book: res.data[0],
+        isbn: isbn
       })
     })
   }
+
 })

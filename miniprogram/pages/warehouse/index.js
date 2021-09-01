@@ -1,5 +1,9 @@
 Page({
 
+  onLoad: function(){
+    this.fechBooks('books', 0, 20);
+  },
+
   data: {
     widgets: [{
       icon: '/images/日历-32px.svg',
@@ -38,9 +42,24 @@ Page({
       id: 6,
       name: '科学'
     }],
-    books: [
-      {},{},{},{},{},{},{},{},{}
-    ]
+    books: []
   },
+
+  
+  fechBooks: function(dataBaseName = "books", skipNumber = 0, needNumber = 20){
+    const db = wx.cloud.database();
+    const _this = this;
+    db.collection(dataBaseName).skip(skipNumber).orderBy('createTime', 'desc').limit(needNumber).get()
+    .then(res => {
+      console.log(res);
+      const oldList = _this.data.books;
+      const newList = oldList.concat(res.data);
+      const hasMore = !(res.data && res.data.length < 1);
+      _this.setData({
+        books: newList,
+        hasMore,
+      })
+    })
+  }
 
 })

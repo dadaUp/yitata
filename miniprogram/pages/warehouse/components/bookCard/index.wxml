@@ -2,7 +2,7 @@
   <view class="card">
     <image class="cover" src="{{book.cover}}"></image>
     <wxs src="../../../../wxs/subUtil.wxs" module="tools" />
-    <view class="summary">{{tools.subString(book.summary, 50)}}</view>
+    <view class="summary {{'bg-img-' + index % 3}}">{{tools.subString(book.summary, 50)}}</view>
   </view>
   <view class="basic">
     <view class="title">{{book.title}}</view>

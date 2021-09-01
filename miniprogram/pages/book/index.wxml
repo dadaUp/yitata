@@ -1,7 +1,7 @@
 <nav-back></nav-back>
 <view class="root">
-  <teaser></teaser>
-  <intro></intro>
+  <teaser book="{{book}}"></teaser>
+  <intro intro="{{book.summary}}"></intro>
   <concise-review-bar></concise-review-bar>
   <view class="isbn">
     {{'ISBN: '+ isbn}}
